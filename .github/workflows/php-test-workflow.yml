@@ -51,7 +51,7 @@ jobs:
               COMPOSER_PROCESS_TIMEOUT=0 composer install --dev --no-suggest --no-interaction
 
         -   name: Install Guzzle
-            run: composer require guzzlehttp/guzzle:^6.3.0 ${{ matrix.dependencies-preference }} --no-progress;
+            run: composer require guzzlehttp/guzzle:^7.5 ${{ matrix.dependencies-preference }} --no-progress;
 
         -   run: composer show
 
